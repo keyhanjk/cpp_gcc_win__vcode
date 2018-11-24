@@ -1,17 +1,19 @@
 {
     "version": "2.0.0",
+    "_runner": "terminal",
     "tasks": [
         {
             "label": "build",
-            "type": "shell",
+            "type": "shell", 
             "command": "gcc",
             "args": [
                 "-Wall",
+                "-Wconversion", 
+                "-Wextra", 
                 "-o",
                 "main.exe",
                 "main.cpp",
-                "-g",
-                "-v"
+                "-g"
             ],
             "problemMatcher": {
                 "owner": "cpp",
